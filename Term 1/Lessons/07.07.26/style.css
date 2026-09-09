@@ -1,0 +1,44 @@
+.cont1{
+    border: 1px solid black;
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.cont2{
+    border: 1px solid black;
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+}
+.cont3{
+    border: 1px solid black;
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    z-index: 2;
+}
+.cont4{
+    border: 1px solid black;
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    z-index: 3;
+}
+.cont5{
+    border: 1px solid black;
+    width: 200px;
+    height: 280px;
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    z-index: 4;
+}
