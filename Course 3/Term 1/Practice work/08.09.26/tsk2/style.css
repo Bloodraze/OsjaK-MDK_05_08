@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: gray;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    background: darkblue;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img {
+    width: 40px;
+    height: 40px;
+    background: black;
+}
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+nav a:hover {
+    background: blue;
+}
+
+.phone {
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    padding: 30px 15px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.main-content {
+    flex: 2;
+    min-width: 300px;
+}
+
+.sidebar {
+    flex: 1;
+    min-width: 200px;
+    background: aquamarine;
+    padding: 15px;
+}
+
+.main-content h2{
+    margin-bottom: 15px;
+    color: black;
+}
+.sidebar h2 {
+    margin-bottom: 15px;
+    color: black;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+.card {
+    flex: 1 0 250px;
+    background: white;
+    border: 2px solid lightblue;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+.card h3 {
+    padding: 10px 10px 5px;
+    margin: 0;
+    color: black;
+    text-align: center;
+}
+.card p {
+    padding: 0 10px 10px;
+    color: black;
+    flex: 1;
+}
+
+.btn {
+    display: inline-block;
+    margin: 0 10px 10px;
+    padding: 8px 15px;
+    background: slateblue;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.btn:hover {
+    background: blue;
+}
+
+footer {
+    background: honeydew;
+    color: black;
+    padding: 30px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-section h3 {
+    margin-bottom: 10px;
+    color: black;
+}
+.footer-section a {
+    color: black;
+    text-decoration: none;
+}
+.footer-section a:hover {
+    color: blue;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav {
+        order: 3;
+        width: 100%;
+    }
+    
+    .content {
+        flex-direction: column;
+    }
+    
+    .main-content{
+        flex: 1 1 100%;
+    }
+    .sidebar {
+        flex: 1 1 100%;
+    }
+    
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
