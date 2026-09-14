@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Формы Grid</title>
+        <link rel="stylesheet" href="style_pg1.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="main-title">Напишите нам</h1>
+            <p class="subtitle">Мы будем очень рады вашему письму!</p>
+
+            <form class="form-grid">
+                <label for="name">* Имя</label>
+                <input type="text" id="name" name="name" placeholder="Напишите ваше имя" required>
+
+                <label for="email">* Электронная почта</label>
+                <input type="email" id="email" name="email" placeholder="Напишите ваш электронный адрес" required>
+
+                <label for="message">* Текст сообщения</label>
+                <textarea id="message" name="message" placeholder="Введите текст сообщения" required></textarea>
+
+                <button type="submit" class="submit-btn">Отправить</button>
+            </form>
+            <p class="required-note">Поля, отмеченные * обязательны для заполнения</p>
+        </div>
+    </body>
+</html>

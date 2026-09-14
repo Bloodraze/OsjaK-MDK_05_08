@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Формы Grid или Flex</title>
+        <link rel="stylesheet" href="style_pg2.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="main-title">Интересное — на почту!</h1>
+            <p class="subtitle">Выберите тему:</p>
+
+            <form class="checkbox-grid">
+                <label class="checkbox-item">
+                    <input type="checkbox" name="topic" value="design">
+                    Дизайн
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" name="topic" value="games">
+                    Разработка игр
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" name="topic" value="marketing">
+                    Маркетинг
+                </label>
+
+                <label class="checkbox-item">
+                    <input type="checkbox" name="topic" value="education">
+                    Образование
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" name="topic" value="psychology">
+                    Психология, общество
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" name="topic" value="corporate">
+                    Корп. обучение
+                </label>
+
+                <label class="checkbox-item">
+                    <input type="checkbox" name="topic" value="programming">
+                    Программирование
+                </label>
+                <label class="checkbox-item">
+                    <input type="checkbox" name="topic" value="management">
+                    Менеджмент
+                </label>
+
+                <div class="email-row">
+                    <input type="email" class="email-input" placeholder="Введите ваш email" required>
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </div>
+
+                <p class="agreement-text">
+                    При нажатии на кнопку вы соглашаетесь с 
+                    <a href="#">политикой обработки данных</a> и принимаете 
+                    <a href="#">правила пользования платформой</a>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>

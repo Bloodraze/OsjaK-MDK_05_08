@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.checkbox-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.email-row {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.email-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid grey;
+    font-size: 16px;
+}
+
+.submit-btn {
+    background: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+.agreement-text {
+    grid-column: 1 / -1;
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.agreement-text a {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.agreement-text a:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .checkbox-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .email-row {
+        flex-direction: column;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+}
