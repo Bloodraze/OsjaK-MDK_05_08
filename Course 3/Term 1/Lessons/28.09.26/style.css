@@ -1,0 +1,12 @@
+body{
+    background-color: aquamarine;
+}
+
+.par{
+    color: black;
+}
+
+.par::before{
+    content: '>>';
+    font-size: 5pt;
+}
