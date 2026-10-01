@@ -1,0 +1,8 @@
+.show{
+    height: 600px;
+    background: linear-gradient(to left, blue, orange,  yellow, purple);
+}
+.show-radial{
+    height: 600px;
+    background: radial-gradient(at top right, blue, orange);
+}

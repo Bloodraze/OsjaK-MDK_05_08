@@ -1,0 +1,36 @@
+.el1{
+    background-image: url(/src/V1.jpg);
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    filter: grayscale(50%);
+}
+.el2{
+    background-image: url(/src/V1.jpg);
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    filter: grayscale(100%);
+}
+.el3{
+    background-image: url(/src/V1.jpg);
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    filter: brightness(50%) sepia(100%);
+}
+.el4{
+    background-image: url(/src/V1.jpg);
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    filter: sepia(100%) brightness(50%);
+}
+
+.el5{
+    background-image: url(/src/V1.jpg);
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    filter: url(#myFilter);
+}

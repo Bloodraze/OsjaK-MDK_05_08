@@ -1,0 +1,67 @@
+.radial{
+    height: 500px;
+    width: 500px;
+    background: radial-gradient(
+        red 10%,
+        yellow,
+        blue 50%);
+}
+
+.linear{
+    height: 500px;
+    width: 500px;
+    background:linear-gradient(
+        to right,
+        yellow 32%,
+        white 35%,
+        red 60%,
+        yellowgreen 65%);
+}
+
+.semi-transparent{
+    height: 500px;
+    width: 500px;
+    background: linear-gradient(
+        rgba(0, 0, 120, 0),
+        rgba(125, 0, 125, 1)),
+    url(/src/V1.jpg);
+    background-size: cover;
+}
+.semi-transparent1{
+    height: 500px;
+    width: 500px;
+    background: linear-gradient(
+        rgba(0, 0, 120, 0.6),
+        rgba(255, 128, 0, 0.6)),
+    url(/src/V1.jpg);
+    background-size: cover;
+}
+.semi-transparent2{
+    height: 500px;
+    width: 500px;
+    background: linear-gradient(to top left,
+        rgba(0, 0, 120, 0.9),
+        rgba(255, 128, 0, 0.9)),
+    url(/src/V1.jpg);
+    background-size: cover;
+}
+
+.multiplied{
+    height: 500px;
+    width: 500px;
+    background: linear-gradient(
+        to bottom right,
+        green,
+        transparent
+    ),
+    linear-gradient(
+        to bottom left,
+        red,
+        transparent
+    ),
+    linear-gradient(
+        to top left,
+        blue,
+        transparent
+    );
+}

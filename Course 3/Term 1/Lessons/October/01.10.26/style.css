@@ -1,0 +1,7 @@
+.show{
+    background-image: url(V1.jpg);
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+    filter: grayscale(20%) sepia(100%);
+}
