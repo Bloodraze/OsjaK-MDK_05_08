@@ -1,0 +1,394 @@
+.show {
+    width: 250px;
+    background-color: green;
+    box-shadow: 3px 3px black;
+    color: black;
+}
+.show1 {
+    width: 250px;
+    background-color: green;
+    box-shadow: 3px 3px blue;
+    color: blue;
+}
+.show2 {
+    width: 250px;
+    background-color: green;
+    box-shadow: 3px 3px darkgreen;
+    color: white;
+}
+.show3 {
+    width: 250px;
+    background-color: red;
+    box-shadow: 3px 3px 3px black;
+    color: black;
+}
+.show4 {
+    width: 250px;
+    background-color: red;
+    box-shadow: -3px 2px 3px black;
+    color: black;
+}
+.show5 {
+    width: 250px;
+    background-color: red;
+    box-shadow: 0 0 9px black;
+    color: black;
+}
+.show6 {
+    width: 250px;
+    background-color: orangered;
+    box-shadow: 6px 6px 0 4px darkred;
+    color: white;
+}
+.show7 {
+    width: 250px;
+    background-color: orangered;
+    box-shadow: 6px 6px 6px 4px darkred;
+    color: white;
+}
+.show8 {
+    width: 250px;
+    background-color: orangered;
+    box-shadow: 12px 12px 8px -4px darkred;
+    color: white;
+}
+.show9 {
+    width: 250px;
+    background-color: orangered;
+    box-shadow: 6px 6px 0 8px darkred;
+    color: white;
+}
+.show10 {
+    width: 250px;
+    background-color: orangered;
+    box-shadow: 6px 6px 0 8px darkred;
+    border-radius: 2px;
+    color: white;
+}
+.show11 {
+    width: 250px;
+    background-color: violet;
+    box-shadow: inset 4px 4px rgba(66, 66, 66, 0.5);
+    color: white;
+}
+.show12 {
+    width: 250px;
+    background-color: violet;
+    box-shadow: inset 4px 4px 0 8px rgb(198, 198, 198);
+    color: white;
+}
+.show13 {
+    width: 250px;
+    background-color: violet;
+    box-shadow: inset -2px -2px 8px black;
+    color: white;
+}
+.show14 {
+    width: 250px;
+    background-color: violet;
+    box-shadow: inset 0 0 4px black;
+    color: white;
+}
+.show15 {
+    width: 250px;
+    background-color: white;
+    box-shadow:
+        0 0 2px 1px red,
+        0 0 2px 2px orange,
+        0 0 2px 3px yellow,
+        0 0 2px 4px green,
+        0 0 2px 5px lightblue,
+        0 0 2px 6px blue,
+        0 0 2px 7px violet;
+    color: black;
+}
+.show16 {
+    width: 250px;
+    background-color: white;
+    box-shadow:
+        -6px -6px 8px -4px rgba(255, 0, 0, 0.75),
+        6px -6px 8px -4px rgba(0, 255, 0, 0.75),
+        6px 6px 8px -4px rgba(255, 255, 0, 0.75),
+        -6px 6px 8px -4px rgba(0, 0, 255, 0.75);
+    color: black;
+}
+.show17 {
+    width: 250px;
+    background-color: white;
+    box-shadow:
+        inset 0 1px red,
+        0 3px 3px -2px black;
+    color: black;
+}
+.show18 {
+    width: 250px;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.slick-box {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    border: 1px solid #efefef;
+    background: #fff;
+    box-shadow:
+        0 1px 4px rgba(0, 0, 0, 0.27),
+        inset 0 0 40px rgba(0, 0, 0, 0.06);
+}
+.slick-box::before,
+.slick-box::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 10px;
+    bottom: 10px;
+    width: 70%;
+    max-width: 300px;
+    height: 55%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: skew(-15deg) rotate(-6deg);
+}
+.slick-box::after {
+    right: 10px;
+    left: auto;
+    transform: skew(15deg) rotate(6deg);
+}
+.show19 {
+    width: 300px;
+    background-color: white;
+    text-shadow: 10px 10px;
+    color: black;
+}
+.show20 {
+    width: 300px;
+    background-color: white;
+    text-shadow: -5px -5px;
+    color: blue;
+}
+.show21 {
+    width: 250px;
+    background-color: #333;
+    text-shadow: -1px -1px white;
+    color: blue;
+}
+.show22 {
+    width: 250px;
+    background-color: #eee;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+    color: blue;
+}
+.show23 {
+    width: 250px;
+    background-color: white;
+    text-shadow: 5px 5px 3px darkred;
+    color: red;
+}
+.show24 {
+    width: 250px;
+    background-color: #333;
+    text-shadow: 4px -4px 10px red;
+    color: azure;
+}
+.show25 {
+    width: 250px;
+    background-color: #333;
+    text-shadow: 0 0 4px black;
+    color: red;
+}
+.show26 {
+    width: 250px;
+    background-color: #333;
+    text-shadow: 0 0 4px black;
+    color: lightgray;
+}
+.show27 {
+    width: 250px;
+    background-color: #333;
+    text-shadow: 5px 5px 3px lightgreen;
+    color: green;
+}
+.show28 {
+    width: 250px;
+    background-color: #333;
+    text-shadow: 8px 8px 2px darkgreen;
+    color: green;
+    font-weight: 900;
+}
+.show29 {
+    width: 250px;
+    background-color: #333;
+    text-shadow: 0 0 3px rgba(128, 255, 0, 0.75);
+    color: green;
+}
+.show30 {
+    width: 250px;
+    background-color: white;
+    text-shadow: 0 0 10px lightgreen;
+    color: black;
+}
+.show31 {
+    width: 250px;
+    background-color: white;
+    text-shadow: 0 0 15px lightgreen;
+    color: black;
+}
+.show32 {
+    width: 250px;
+    background-color: white;
+    color: magenta;
+    text-shadow:
+        -2px 0 darkblue,
+        0 2px darkblue,
+        2px 0 darkblue,
+        0 -2px darkblue,
+        -3px 0 gray,
+        0 3px gray,
+        3px 0 gray,
+        0 -3px gray;
+}
+.show33 {
+    width: 250px;
+    background-color: #333;
+    text-shadow:
+        3px 3px 4px rgba(255, 255, 255, 0.35),
+        6px -6px 4px rgba(255, 255, 255, 0.25),
+        -3px -3px 6px rgba(255, 0, 255, 0.15);
+    color: magenta;
+}
+.show34 {
+    width: 250px;
+    background-color: white;
+    text-shadow:
+        0 0 2px white,
+        0 0 6px magenta,
+        0 0 12px white,
+        0 0 18px magenta;
+    color: magenta;
+}
+.show35 {
+    width: 250px;
+    background-color: #333;
+    text-shadow:
+        0 0 2px #fff,
+        0 0 4px rgba(255, 255, 255, 0.5),
+        0 0 6px #f0f,
+        0 0 12px #fff,
+        0 0 15px #222,
+        -4px 0 9px #f0f,
+        4px 0 9px #f0f,
+        0 -4px 9px #f0f,
+        0 4px 9px #f0f;
+    color: magenta;
+}
+.show36 {
+    width: 250px;
+    background-color: white;
+    text-shadow:
+        0 -3px 3px white,
+        0 1px 2px black;
+    color: magenta;
+}
+.show37 {
+    width: 250px;
+    background-color: white;
+    text-shadow: 0 0 4px magenta;
+    color: black;
+}
+.show38 {
+    width: 250px;
+    background-color: white;
+    text-shadow:
+        magenta 0 2px,
+        magenta 2px 0,
+        magenta -2px 0,
+        magenta 0 -2px,
+        magenta -1.4px -1.4px,
+        magenta 1.4px 1.4px,
+        magenta 1.4px -1.4px,
+        magenta -1.4px 1.4px;
+    color: black;
+}
+.show39 {
+    width: 250px;
+    background-color: white;
+    text-shadow:
+        0 0 3px yellow,
+        0 0 6px orange,
+        0 0 9px red,
+        0 0 12px lime,
+        0 0 15px blue,
+        0 0 18px violet;
+    color: black;
+}
+.show40 {
+    width: 250px;
+    background-color: white;
+    text-shadow:
+        0 0 2px white,
+        2px 0 5px #222,
+        3px 0 6px #933,
+        5px 0 14px #222,
+        6px 0 16px #533;
+    color: black;
+}
+.show41 {
+    width: 250px;
+    background-color: #222;
+    text-shadow:
+        0 0 2px #eee,
+        0 0 4px #fff,
+        0 -2px 6px #ff3,
+        2px -4px 8px #fd3,
+        -2px -6px 11px #f80,
+        2px -8px 18px #f20;
+    color: white;
+}
+.show42 {
+    width: 250px;
+    background-color: gray;
+    text-shadow: 0 2px 3px #555;
+    color: white;
+}
+.show43 {
+    width: 250px;
+    background-color: #333;
+    text-shadow:
+        0 0 1px #999,
+        1px 1px 1px #888,
+        2px 2px 1px #777,
+        3px 3px 1px #666,
+        4px 4px 1px #555,
+        5px 5px 1px #444;
+    color: white;
+}
+.show44 {
+    width: 250px;
+    background-color: white;
+    text-shadow:
+        2px 2px #fff,
+        3px 3px #666;
+    color: black;
+}
+.show45 {
+    width: 250px;
+    background-color: #555;
+    text-shadow:
+        0 0 2px rgba(196, 255, 0, 0.3),
+        0 0 6px #9c6;
+    color: transparent;
+}
+
+.text {
+    font-size: 28px;
+    text-shadow: 0 0 5px black;
+}
+.text::first-letter {
+    color: azure;
+    text-shadow:
+        0 0 5px black,
+        0 0 6px blue,
+        0 -2px 6px cyan,
+        0 -4px 9px lightblue;
+}

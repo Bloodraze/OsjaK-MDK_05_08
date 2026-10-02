@@ -17,14 +17,14 @@
     background-size: cover;
     width: 250px;
     height: 250px;
-    filter: brightness(50%) sepia(100%);
+    filter: brightness(200%) sepia(100%);
 }
 .el4{
     background-image: url(/src/V1.jpg);
     background-size: cover;
     width: 250px;
     height: 250px;
-    filter: sepia(100%) brightness(50%);
+    filter: sepia(100%) brightness(200%);
 }
 
 .el5{
