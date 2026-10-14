@@ -1,0 +1,11 @@
+.advantages__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 120px auto 70px;
+}
+
+.advantages__item{
+    flex-basis: 30%;
+}

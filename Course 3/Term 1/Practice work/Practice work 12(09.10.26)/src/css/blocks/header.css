@@ -1,6 +1,7 @@
 .header{
     background: url(../../img/bg_header.png) center no-repeat;
     background-size: cover;
+    margin-bottom: 120px;
     position: relative;
 }
 
@@ -22,10 +23,12 @@
     height: 100vh;
 }
 
-.header_nav{
+.header__nav {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+    gap: 20px;
     padding: 40px 0;
 }
 
@@ -37,13 +40,18 @@
     text-decoration: none;
 }
 
-.nav__list{
+.nav__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
     list-style: none;
-    padding: 40px 0;
-    margin: 0 auto;
-    gap: 40px;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+}
+
+.nav__button{
+    margin-left: 62px;
 }
 
 .nav__link{
@@ -52,4 +60,87 @@
     line-height: 30px;
     font-weight: 700;
     text-decoration: none;
+}
+
+.nav__item{
+    margin-left: 30px;
+    text-align: center;
+}
+
+.header__title{
+    font-family: Roboto;
+    font-size: 54px;
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    max-width: 950px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
+}
+
+.header__span{
+    font-weight: 700;
+}
+
+@media(max-width: 980px){
+    .header{
+        margin-bottom: 60px;
+    }
+}
+@media(max-width: 768px){
+    .header__title{
+        font-size: 34px;
+        line-height: 40px;
+        max-width: 600px;
+    }
+}
+@media(max-width: 480px){
+    .header__wrap{
+        height: auto;
+    }
+    .header__title{
+        position: static;
+        transform: translate(0, 0);
+        padding-top: 40px;
+        padding-bottom: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 24px;
+    }
+    .header__title {
+        position: static;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 40px 15px;
+        text-align: center;
+    }
+
+    .nav__list{
+        margin-left: 0;
+        display: block;
+        column-gap: 20px;
+    }
+
+    .nav__item{
+        margin-left: 0;
+    }
+
+    .nav__button{
+        margin-left: 0;
+        position: static
+    }
 }

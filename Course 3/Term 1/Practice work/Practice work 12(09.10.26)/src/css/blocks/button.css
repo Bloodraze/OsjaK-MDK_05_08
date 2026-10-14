@@ -1,0 +1,14 @@
+.button__link{
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: rgb(71, 181, 105);
+    padding: 8px 35px;
+}
+
+.button__link:hover{
+    background-color: rgb(20, 137, 81);
+}
