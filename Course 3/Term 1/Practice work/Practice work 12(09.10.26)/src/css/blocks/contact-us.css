@@ -26,7 +26,7 @@
     line-height: 30px;
     font-weight: 700;
     color: #1b1b1b;
-    margin: 0 0 20px;
+    margin: 0 0 -10px;
 }
 
 .contact-us__address{
@@ -35,7 +35,7 @@
     font-size: 16px;
     line-height: 28px;
     color: #1b1b1b;
-    opacity: .7;
+    opacity: .5;
     margin: 0 0 30px;
     white-space: pre-line;
 }
