@@ -1,0 +1,170 @@
+.main__contact-us{
+    margin: 120px auto;
+}
+
+.contact-us__title{
+    font-size: 36px;
+    line-height: 42px;
+    color: #1b1b1b;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 70px;
+}
+
+.contact-us__info{
+    display: grid;
+    grid-template-columns: 43% 1fr;
+    grid-template-rows: auto auto 1fr;
+    column-gap: 60px;
+    align-items: start;
+}
+
+.contact-us__city{
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #1b1b1b;
+    margin: 0 0 20px;
+}
+
+.contact-us__address{
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1b1b1b;
+    opacity: .7;
+    margin: 0 0 30px;
+    white-space: pre-line;
+}
+
+.contact-us__map{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.contact-us__img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.contact-us__form{
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-us__field {
+    width: 100%;
+}
+
+.contact-us__input{
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1b1b1b;
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.contact-us__textarea{
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1b1b1b;
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Roboto;
+    height: 250px;
+    min-height: 250px;
+    max-height: 300px;
+    resize: none;
+    overflow: auto;
+}
+
+.contact-us__input:focus{
+    border-color: #22b977;
+}
+
+.contact-us__textarea:focus{
+    border-color: #22b977;
+}
+
+.contact-us__input::placeholder{
+    color: #9a9a9a;
+}
+
+.contact-us__textarea::placeholder{
+    color: #9a9a9a;
+}
+
+.contact-us__button{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+@media (max-width: 980px){
+    .main__contact-us {
+        margin: 60px auto;
+    }
+
+    .contact-us__info{
+        gap: 40px;
+    }
+
+    .contact-us__textarea{
+        height: 200px;
+        min-height: 200px;
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 768px){
+    .contact-us__title{
+        margin-bottom: 40px;
+    }
+
+    .contact-us__info{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 30px;
+    }
+
+    .contact-us__city{
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .contact-us__address{
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .contact-us__map{
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .contact-us__form{
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .contact-us__button{
+        margin-top: 40px;
+    }
+}
