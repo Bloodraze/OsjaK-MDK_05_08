@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  @@include('head.html')
+</head>
+<body>
+  @@include('header.html')
+
+  <main>
+    <section class="py-5 bg-primary text-white">
+      <div class="container">
+        <div class="p-5 rounded-3">
+          <h1 class="display-5 fw-bold">Техника для работы и отдыха</h1>
+          <p class="col-md-8 fs-5">
+            Ноутбуки, смартфоны, наушники и аксессуары с доставкой по Санкт-Петербургу.
+          </p>
+          <a href="catalog.html" class="btn btn-light btn-lg">Перейти в каталог</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card shadow">
+            <div class="card-body">
+              <h2 class="h4 mb-3">Регистрация</h2>
+
+              <form>
+                <div class="mb-3">
+                  <label class="form-label" for="name">Имя</label>
+                  <input class="form-control" id="name" type="text">
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label" for="email">Email</label>
+                  <input class="form-control" id="email" type="email">
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label" for="password">Пароль</label>
+                  <input class="form-control" id="password" type="password">
+                </div>
+
+                <button class="btn btn-primary w-100" type="submit">Зарегистрироваться</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @@include('footer.html')
+</body>
+</html>

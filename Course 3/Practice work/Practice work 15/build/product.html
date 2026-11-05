@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TechnoStore</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TechnoStore</title>
+<link rel="stylesheet" href="css/style.css">
+
+  <main class="container py-5">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <img src="https://placehold.co/800x600" class="img-fluid rounded-3" alt="Ноутбук Pro 15">
+      </div>
+
+      <div class="col-lg-6">
+        <h1>Ноутбук Pro 15</h1>
+        <p class="fs-4 text-primary fw-bold">59 990 ₽</p>
+        <p class="lead">Производительный ноутбук с экраном 15,6" и SSD-накопителем.</p>
+
+        <button class="btn btn-primary btn-lg me-2">В корзину</button>
+        <button class="btn btn-outline-secondary btn-lg">В избранное</button>
+
+        <div class="accordion mt-4" id="productInfo">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#description">
+                Описание
+              </button>
+            </h2>
+            <div id="description" class="accordion-collapse collapse show" data-bs-parent="#productInfo">
+              <div class="accordion-body">
+                Ноутбук подходит для учебы, офисной работы, программирования и мультимедиа.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#specs">
+                Характеристики
+              </button>
+            </h2>
+            <div id="specs" class="accordion-collapse collapse" data-bs-parent="#productInfo">
+              <div class="accordion-body">
+                Экран 15,6", 16 ГБ ОЗУ, SSD 512 ГБ, Wi-Fi 6, вес 1,6 кг.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#delivery">
+                Доставка и гарантия
+              </button>
+            </h2>
+            <div id="delivery" class="accordion-collapse collapse" data-bs-parent="#productInfo">
+              <div class="accordion-body">
+                Доставка по Санкт-Петербургу — 1–2 дня. Гарантия — 12 месяцев.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-5 mt-5" data-bs-theme="dark">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h5>TechnoStore</h5>
+        <p>Магазин цифровой техники.</p>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Меню</h5>
+        <ul class="list-unstyled">
+          <li><a class="link-light" href="index.html">Главная</a></li>
+          <li><a class="link-light" href="catalog.html">Каталог</a></li>
+          <li><a class="link-light" href="product.html">Товар</a></li>
+          <li><a class="link-light" href="about.html">О нас</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Контакты</h5>
+        <p>Санкт-Петербург, Невский проспект, 1</p>
+        <p>+7 (900) 000-00-00</p>
+        <div class="d-flex gap-2">
+          <a href="#" class="btn btn-outline-light btn-sm">VK</a>
+          <a href="#" class="btn btn-outline-light btn-sm">Telegram</a>
+          <a href="#" class="btn btn-outline-light btn-sm">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

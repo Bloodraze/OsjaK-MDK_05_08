@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.container .btn, .container .btn-5, .container .btn-4, .container .btn-3, .container .btn-2, .container .btn-1 {
+  border: 3px solid #333;
+}
+
+.btn, .btn-5, .btn-4, .btn-3, .btn-2, .btn-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-1 {
+  background-color: #e74c3c;
+}
+.btn-1:hover {
+  background-color: #c0392b;
+}
+
+.btn-2 {
+  background-color: #3498db;
+}
+.btn-2:hover {
+  background-color: #2980b9;
+}
+
+.btn-3 {
+  background-color: #2ecc71;
+}
+.btn-3:hover {
+  background-color: #27ae60;
+}
+
+.btn-4 {
+  background-color: #f39c12;
+}
+.btn-4:hover {
+  background-color: #d35400;
+}
+
+.btn-5 {
+  background-color: #9b59b6;
+}
+.btn-5:hover {
+  background-color: #8e44ad;
+}
+
+.item-1,
+.item-2,
+.item-3 {
+  width: 300px;
+  height: 200px;
+  margin: 20px auto;
+  background-size: cover;
+  background-position: center;
+}
+
+.item-1 {
+  background-image: url(img/1.jpg);
+}
+
+.item-2 {
+  background-image: url(img/2.jpg);
+}
+
+.item-3 {
+  background-image: url(img/3.jpg);
+}
+
+/*# sourceMappingURL=style.css.map */

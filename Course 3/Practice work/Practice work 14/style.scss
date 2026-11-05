@@ -1,0 +1,96 @@
+$color-1: #e74c3c;
+$color-2: #3498db;
+$color-3: #2ecc71;
+$color-4: #f39c12;
+$color-5: #9b59b6;
+$hover-1: #c0392b;
+$hover-2: #2980b9;
+$hover-3: #27ae60;
+$hover-4: #d35400;
+$hover-5: #8e44ad;
+
+@mixin flexible() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    @include flexible();
+    height: 200px;
+    .btn {
+        border: 3px solid #333;
+    }
+}
+
+.btn {
+    @include flexible();
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-1 {
+    @extend .btn;
+    background-color: $color-1;
+
+    &:hover {
+        background-color: $hover-1;
+    }
+}
+
+.btn-2 {
+    @extend .btn;
+    background-color: $color-2;
+
+    &:hover {
+        background-color: $hover-2;
+    }
+}
+
+.btn-3 {
+    @extend .btn;
+    background-color: $color-3;
+
+    &:hover {
+        background-color: $hover-3;
+    }
+}
+
+.btn-4 {
+    @extend .btn;
+    background-color: $color-4;
+
+    &:hover {
+        background-color: $hover-4;
+    }
+}
+
+.btn-5 {
+    @extend .btn;
+    background-color: $color-5;
+
+    &:hover {
+        background-color: $hover-5;
+    }
+}
+
+.item-1,
+.item-2,
+.item-3 {
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    background-size: cover;
+    background-position: center;
+}
+
+@for $i from 1 to 4 {
+    .item-#{$i} {
+        background-image: url(img/#{$i}.jpg);
+    }
+}
