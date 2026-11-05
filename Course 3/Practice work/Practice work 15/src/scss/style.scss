@@ -4,5 +4,19 @@ $body-bg: #f8f9fa;
 $body-color: #212529;
 $font-family-sans-serif: "Segoe UI", Roboto, Arial, sans-serif;
 $border-radius: .5rem;
+.product-image {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.carousel-item img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
