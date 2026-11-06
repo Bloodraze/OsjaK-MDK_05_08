@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ПР 16</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <header class="site-header">
+        <a class="logo" href="#">Мой магазин</a>
+        <nav class="site-nav">
+        <a href="#">Каталог</a>
+        <a href="#">О нас</a>
+        <a href="#">Контакты</a>
+        </nav>
+    </header>
+    <main class="page-main">
+        <h1 class="page-title">Каталог товаров</h1>
+        <ul class="goods-list"></ul>
+    </main>
+    <footer class="site-footer">
+        <p class="site-footer__text">© 2026 Мой магазин</p>
+    </footer>
+    <div class="modal hidden" id="order-modal">
+        <div class="modal__content">
+        <button class="modal__close" type="button" aria-label="Закрыть окно">×</button>
+        <h2 class="modal__title">Заказ товара</h2>
+        <p class="modal__text"></p>
+        <button class="modal__button" type="button">Ок</button>
+        </div>
+    </div>
+    <script src="goods.js"></script>
+    </body>
+</html>
