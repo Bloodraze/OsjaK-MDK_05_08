@@ -1,0 +1,25 @@
+.button__link{
+    display: inline-block;
+    min-width: 230px;
+    padding: 18px 25px;
+    border-radius: 0 20px;
+    background-color: #10b582;
+    color: #fdfdfd;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button__link:hover{
+    background-color: #0b9067;
+}
+
+.button--orange .button__link{
+    background-color: #fa9f42;
+}
+
+.button--orange .button__link:hover{
+    background-color: #e68a2c;
+}

@@ -1,0 +1,258 @@
+.header{
+    background-color: #10b582;
+    color: #fdfdfd;
+}
+
+.header__wrap{
+    position: relative;
+    min-height: 800px;
+}
+
+.header__nav{
+    padding: 40px 0;
+}
+
+.nav__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav__link{
+    color: #fdfdfd;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.nav__link:hover,
+.nav__link--active{
+    border-bottom: 1px dashed #fa9f42;
+    padding-bottom: 5px;
+}
+
+.header__content{
+    position: relative;
+    z-index: 2;
+    max-width: 570px;
+    margin: 105px auto 0;
+    text-align: center;
+}
+
+.header__logo{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 35px;
+    color: #fdfdfd;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.header__logo-img{
+    display: block;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.header__mark{
+    position: relative;
+    width: 28px;
+    height: 26px;
+    flex-shrink: 0;
+}
+
+.header__mark::before,
+.header__mark::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 28px;
+    height: 11px;
+    background-color: #fa9f42;
+    border-radius: 10px 0;
+}
+
+.header__mark::before{
+    top: 0;
+}
+
+.header__mark::after{
+    bottom: 0;
+    width: 18px;
+}
+
+.header__title{
+    font-size: 58px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.header__text{
+    max-width: 390px;
+    margin: 0 auto 50px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.header__picture{
+    position: absolute;
+    width: 240px;
+    height: 300px;
+}
+
+.header__picture::before{
+    content: "";
+    position: absolute;
+    inset: -30px -30px 30px 30px;
+    border: 1px dashed rgba(253, 253, 253, .65);
+    border-radius: 0 80px 0 0;
+}
+
+.header__picture--left{
+    left: 15px;
+    bottom: 120px;
+}
+
+.header__picture--right{
+    right: 15px;
+    top: 150px;
+}
+
+.header__picture--right::before{
+    inset: -30px 30px 30px -30px;
+    border-radius: 80px 0 0 0;
+}
+
+.header__img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 80px 0 0;
+}
+
+.header__picture--right .header__img{
+    border-radius: 80px 0 0 0;
+}
+
+.header__social{
+    position: absolute;
+    left: 15px;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.header__social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    text-decoration: none;
+}
+
+.header__social-img{
+    display: block;
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.header__scroll{
+    position: absolute;
+    right: 15px;
+    bottom: 120px;
+    color: #fdfdfd;
+    font-size: 14px;
+    text-decoration: none;
+    writing-mode: vertical-rl;
+}
+
+.header__scroll::after{
+    content: "↓";
+    display: inline-block;
+    margin-top: 15px;
+    writing-mode: horizontal-tb;
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+@media(max-width: 1100px){
+    .header__picture{
+        width: 190px;
+        height: 240px;
+    }
+    .header__content{
+        max-width: 490px;
+    }
+    .header__title{
+        font-size: 48px;
+    }
+}
+
+@media(max-width: 980px){
+    .header__wrap{
+        min-height: 720px;
+    }
+    .header__picture{
+        width: 150px;
+        height: 190px;
+    }
+    .header__picture--right{
+        top: 160px;
+    }
+    .header__content{
+        max-width: 420px;
+    }
+    .header__title{
+        font-size: 42px;
+    }
+    .nav__list{
+        gap: 24px;
+    }
+}
+
+@media(max-width: 768px){
+    .header__wrap{
+        min-height: auto;
+        padding-bottom: 60px;
+    }
+    .header__nav{
+        padding: 25px 0;
+    }
+    .nav__list{
+        gap: 15px 20px;
+    }
+    .header__content{
+        margin-top: 45px;
+        max-width: 570px;
+    }
+    .header__picture,
+    .header__social,
+    .header__scroll{
+        display: none;
+    }
+}
+
+@media(max-width: 480px){
+    .header__title{
+        font-size: 34px;
+    }
+    .header__logo{
+        font-size: 26px;
+    }
+    .header__text{
+        margin-bottom: 30px;
+    }
+}
