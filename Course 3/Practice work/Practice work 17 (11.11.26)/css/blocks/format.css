@@ -23,7 +23,7 @@
     content: "";
     position: absolute;
     inset: -30px -30px 30px 30px;
-    border: 1px dashed rgba(253, 253, 253, .65);
+    border: 1.2px dashed rgba(253, 253, 253, .65);
     border-radius: 0 120px 0 0;
 }
 
