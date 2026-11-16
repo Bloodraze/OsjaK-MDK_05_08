@@ -63,6 +63,14 @@
     border-radius: 0 0 70px 0;
 }
 
+.teachers__img--top-left{
+    border-radius: 70px 0 0 0;
+}
+
+.teachers__img--top-right{
+    border-radius: 0 70px 0 0;
+}
+
 .teachers__name{
     margin-top: 15px;
     font-size: 14px;
