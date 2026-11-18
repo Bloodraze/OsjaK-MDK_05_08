@@ -3,10 +3,10 @@
 }
 
 .footer__wrap{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 70px;
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) repeat(3, minmax(0, 1fr)) minmax(0, 1.5fr);
+    align-items: start;
+    gap: 30px;
     padding-top: 80px;
     padding-bottom: 50px;
 }
@@ -62,14 +62,6 @@
     width: 22px;
     height: 22px;
     object-fit: contain;
-}
-
-.footer__nav{
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-    justify-content: space-between;
-    gap: 30px;
 }
 
 .footer__title{
@@ -129,45 +121,65 @@
     margin-right: auto;
 }
 
-@media(max-width: 980px){
-    .footer__wrap{
-        gap: 40px;
-        padding-top: 50px;
-    }
-    .footer__content{
-        flex-basis: 230px;
-    }
+.footer__wrap > *{
+    min-width: 0;
 }
 
-@media(max-width: 768px){
+.footer__email,
+.footer__policy{
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 1100px){
     .footer__wrap{
-        flex-direction: column;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 35px;
+        padding-top: 50px;
     }
+
     .footer__content{
-        flex-basis: auto;
-        max-width: 330px;
+        grid-column: 1 / -1;
+        max-width: 400px;
     }
-    .footer__nav{
-        width: 100%;
-    }
+
     .footer__social{
         margin-top: 25px;
     }
+
+    .footer__questions{
+        max-width: none;
+    }
+}
+
+@media (max-width: 768px){
+    .footer__wrap{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px;
+    }
+
     .footer__bottom-wrap{
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
     }
+
+    .footer__copyright{
+        margin-right: 0;
+    }
 }
 
-@media(max-width: 480px){
-    .footer__column,
-    .footer__questions{
-        flex-basis: calc(50% - 15px);
-        max-width: none;
-        min-width: 0;
+@media (max-width: 480px){
+    .footer__wrap{
+        grid-template-columns: minmax(0, 1fr);
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
-    .footer__email{
-        overflow-wrap: anywhere;
+
+    .footer__logo{
+        font-size: 26px;
+    }
+
+    .footer__title{
+        margin-bottom: 15px;
     }
 }

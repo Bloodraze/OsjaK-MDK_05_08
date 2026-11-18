@@ -16,8 +16,9 @@
     padding-bottom: 80px;
 }
 
-.join__content {
+.join__content{
     flex-basis: 570px;
+    min-width: 0;
 }
 
 .join__title{
@@ -70,8 +71,17 @@
     }
 }
 
-@media(max-width: 480px){
+@media (max-width: 480px){
+    .join__wrap{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .join__content{
+        padding: 25px 15px;
+    }
+
     .join__title{
-        font-size: 34px;
+        font-size: clamp(26px, 7vw, 34px);
     }
 }

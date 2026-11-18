@@ -1,6 +1,9 @@
 .button__link{
     display: inline-block;
-    min-width: 230px;
+    width: 230px;
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
     padding: 18px 25px;
     border-radius: 0 20px;
     background-color: #10b582;
@@ -16,10 +19,16 @@
     background-color: #0b9067;
 }
 
-.button--orange .button__link{
+.button--primary .button__link{
     background-color: #fa9f42;
 }
 
-.button--orange .button__link:hover{
+.button--primary .button__link:hover{
     background-color: #e68a2c;
+}
+
+@media (max-width: 480px){
+    .button__link{
+        padding: 16px 20px;
+    }
 }

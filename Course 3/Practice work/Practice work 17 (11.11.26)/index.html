@@ -7,9 +7,9 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="container">
-            <div class="header" id="platform">
-                <header class="header__wrap wrap">
+       <div class="container">
+            <header class="header" id="platform">
+                <div class="header__wrap wrap">
                     <nav class="header__nav nav" aria-label="Основная навигация">
                         <ul class="nav__list">
                             <li class="nav__item">
@@ -18,7 +18,7 @@
                             <li class="nav__item">
                                 <a class="nav__link nav__link--active" href="#">Платформа</a>
                             </li>
-                            <li class="nav__item">
+                            <li class="header__item nav__item">
                                 <a class="nav__link" href="#">Курсы</a>
                             </li>
                             <li class="nav__item">
@@ -48,34 +48,38 @@
                         </li>
                         <li class="header__social-item">
                             <a class="header__social-link" href="#" aria-label="Instagram — контакты">
-                                <img class="header__social-img" src="img/icon5.svg">
+                                <img class="header__social-img" src="img/icon5.svg" alt="">
                             </a>
                         </li>
                     </ul>
-                    <div class="header__picture header__picture--left">
-                        <img class="header__img" src="img/3.png" alt="Девушка учится за ноутбуком">
-                    </div>
-                    <div class="header__content">
-                        <a class="header__logo" href="#">
-                            <img class="header__logo-img" src="img/icon.png" alt="">
-                            E-Mentor
-                        </a>
-                        <h1 class="header__title">Образовательная онлайн-платформа</h1>
-                        <p class="header__text">
-                            Курсы и видео-лекции по дизайну, копирайтингу,
-                            SMM, таргету и многим другим направлениям
-                        </p>
-                        <div class="header__button button button--orange">
-                            <a class="button__link" href="#">Все направления</a>
-                        </div>
-                    </div>
-                    <div class="header__picture header__picture--right">
-                        <img class="header__img" src="img/4.png" alt="Девушка проходит онлайн-курс">
-                    </div>
-                    <a class="header__scroll" href="#">Листайте вниз</a>
-                </header>
-            </div>
+                </div>
+            </header>
             <main class="main">
+                <section class="hero" id="hero">
+                    <div class="hero__wrap wrap">
+                        <div class="hero__picture hero__picture--left">
+                            <img class="hero__img" src="img/3.png" alt="Девушка учится за ноутбуком">
+                        </div>
+                        <div class="hero__content">
+                            <a class="hero__logo" href="#">
+                                <img class="hero__logo-img" src="img/icon.png" alt="">
+                                E-Mentor
+                            </a>
+                            <h1 class="hero__title">Образовательная онлайн-платформа</h1>
+                            <p class="hero__text">
+                                Курсы и видео-лекции по дизайну, копирайтингу,
+                                SMM, таргету и многим другим направлениям
+                            </p>
+                            <div class="hero__button button button--primary">
+                                <a class="button__link" href="#">Все направления</a>
+                            </div>
+                        </div>
+                        <div class="hero__picture hero__picture--right">
+                            <img class="hero__img" src="img/4.png" alt="Девушка проходит онлайн-курс">
+                        </div>
+                        <a class="hero__scroll" href="#statistics">Листайте вниз</a>
+                    </div>
+                </section>
                 <section class="main__statistics statistics wrap" id="statistics">
                     <h2 class="visually-hidden">Платформа в цифрах</h2>
                     <ul class="statistics__list">
@@ -164,7 +168,7 @@
                                 участвуйте в интенсивных воркшопах с командой или проходите курс
                                 с гибким расписанием. На нашей платформе каждый найдет подходящий формат.
                             </p>
-                            <div class="format__button button button--orange">
+                            <div class="format__button button button--primary">
                                 <a class="button__link" href="#">Все курсы</a>
                             </div>
                         </div>
@@ -218,7 +222,7 @@
                                 Выберите подходящий тариф и формат обучения, пройдите 2 урока
                                 и мы подарим вам дополнительные лекции по любому направлению бесплатно!
                             </p>
-                            <div class="join__button button button--orange">
+                            <div class="join__button button button--primary">
                                 <a class="button__link" href="#">Выбрать тариф</a>
                             </div>
                         </div>
@@ -249,7 +253,6 @@
                                 </a></li>
                             </ul>
                         </div>
-                        <nav class="footer__nav" aria-label="Навигация в подвале">
                         <div class="footer__column">
                             <h3 class="footer__title">Обучение</h3>
                             <ul class="footer__list">
@@ -306,7 +309,6 @@
                                 <p class="footer__text">Напишите нам на почту</p>
                                 <a class="footer__email" href="#">education@ementor.info</a>
                             </div>
-                        </nav>
                     </div>
                     <div class="footer__bottom">
                         <div class="footer__bottom-wrap wrap">

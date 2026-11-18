@@ -5,19 +5,21 @@
 }
 
 body{
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     background-color: #fdfdfd;
     color: #353a5a;
+    overflow-wrap: break-word;
 }
 
 .container{
-    max-width: 100%;
+    width: 100%;
 }
 
 .wrap{
+    width: 100%;
     max-width: 1200px;
-    padding: 0 15px;
     margin: 0 auto;
+    padding-inline: 15px;
 }
 
 img{

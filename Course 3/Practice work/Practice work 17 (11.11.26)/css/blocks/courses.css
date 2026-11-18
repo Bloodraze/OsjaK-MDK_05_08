@@ -48,6 +48,7 @@
     line-height: 22px;
     font-weight: 500;
     color: #353a5a;
+    overflow-wrap: anywhere;
 }
 
 .courses__button{
@@ -71,14 +72,8 @@
     }
 }
 
-@media(max-width: 480px){
+@media (max-width: 480px){
     .courses__title{
-        font-size: 34px;
-    }
-    .courses__item{
-        flex-basis: 100%;
-    }
-    .courses__button{
-        margin-top: 35px;
+        font-size: clamp(26px, 7vw, 34px);
     }
 }

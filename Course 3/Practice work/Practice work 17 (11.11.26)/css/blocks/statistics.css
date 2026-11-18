@@ -13,6 +13,7 @@
 .statistics__item{
     flex-basis: calc(25% - 23px);
     text-align: center;
+    min-width: 0;
 }
 
 .statistics__number{
@@ -43,8 +44,22 @@
     }
 }
 
-@media(max-width: 480px){
+@media (max-width: 480px) {
+    .statistics__list{
+        gap: 25px 15px;
+    }
+
+    .statistics__item{
+        flex-basis: calc((100% - 15px) / 2);
+    }
+
     .statistics__number{
-        font-size: 38px;
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 360px){
+    .statistics__item{
+        flex-basis: 100%;
     }
 }
