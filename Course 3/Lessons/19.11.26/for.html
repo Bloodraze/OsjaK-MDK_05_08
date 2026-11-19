@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>for</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/vue.global.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="sample">
+                <button type="button" class="btn btn-primary" @click="add">Add number</button>
+                <ul class="list-group">
+                    <li v-for="num, i is nums" class="list-group-item" @click="onClick(i)">
+                        {{ i + 1 }} - {{ nums }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            let app = Vue.createApp({
+                data(){
+                    return{
+                        nums: []
+                    }
+                },
+                methods:{
+                    onClick(i){
+                        this.nums[i]++;
+                    },
+                    add(){
+                        this.nums.push(Math.floor(Math.random() * 100));
+                    }
+                }
+            });
+            let root = app.mount('.sample');
+            console.log(root);
+        </script>
+    </body>
+</html>
