@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>task 2</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/styles.css" rel="stylesheet">
+	<script src="js/vue.global.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<div class="sample">
+		<form v-if="!done" @submit.prevent="done = true">
+			<div>
+				<app-input v-for="(field, i) in info"
+						   :key="i"
+						   :label="field.label"
+						   :value="field.value"
+						   :valid="field.valid"
+						   @changed="onInput(i, $event)"
+				></app-input>
+			</div>
+			<button :disabled="!isValid" class="btn btn-primary">Send Data</button>
+		</form>
+		<div v-else>
+			<h2>All done!</h2>
+			<table class="table table-bordered">
+				<tr v-for="(field, i) in info" :key="i">
+					<td>{{ field.label }}</td>
+					<td>{{ field.value }}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<script>
+	const AppInput = {
+		props: ['label', 'value', 'valid'],
+		data: () => ({
+			activated: false
+		}),
+		methods: {
+			onInput(e){
+				this.activated = true;
+				this.$emit('changed', e.target.value);
+			}
+		},
+		template: `
+			<div class="form-group">
+				<label>
+					{{ label }}
+					<span v-if="activated"
+						  :class="valid ? 'fa fa-check-circle text-success' : 'fa fa-exclamation-circle text-danger'">
+					</span>
+				</label>
+				<input type="text" class="form-control" :value="value" @input="onInput">
+			</div>
+		`
+	};
+
+	Vue.createApp({
+		components: {
+			AppInput
+		},
+		data: () => ({
+			info: [
+				{
+					label: 'Name',
+					value: '',
+					pattern: /^[a-zA-Z ]{2,30}$/
+				},
+				{
+					label: 'Phone',
+					value: '',
+					pattern: /^[0-9]{7,14}$/
+				},
+				{
+					label: 'Email',
+					value: '',
+					pattern: /.+/
+				},
+				{
+					label: 'Some Field 1',
+					value: '',
+					pattern: /.+/
+				},
+				{
+					label: 'Some Field 2',
+					value: '',
+					pattern: /.+/
+				}
+			],
+			done: false
+		}),
+		computed: {
+			validCnt(){
+				return this.info.filter(field => field.valid).length;
+			},
+			isValid(){
+				return this.validCnt === this.info.length;
+			}
+		},
+		methods: {
+			onInput(i, val){
+				let field = this.info[i];
+				field.value = val.trim();
+				field.valid = field.pattern.test(field.value);
+			}
+		},
+		created(){
+			this.info.forEach(field => {
+				field.valid = field.pattern.test(field.value);
+			});
+		}
+	}).mount('.sample');
+</script>
+</body>
+</html>

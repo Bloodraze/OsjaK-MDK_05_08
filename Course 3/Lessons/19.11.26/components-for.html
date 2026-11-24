@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>components-for</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/vue.global.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="sample">
+                <h1>Компоненты и цикл for</h1>
+                <button class="btn btn-success m-3" @click="showAlert('Alert', 'success')">Show Alert</button>
+                <button class="btn btn-warning m-3" @click="showAlert('Warning', 'warning')">Show Warning</button>
+                <button class="btn btn-danger m-3" @click="showAlert('Danger', 'danger')">Show Danger</button>
+                <app-alert v-for="alert, i in alertMessages" :content="alert.message" :color="alert.color" @closedalert="onCloseAlert(i, $event)"></app-alert>
+            </div>
+        </div>
+        <script>
+            const AppAlert = {
+                template: `
+                    <div class="alert" :class="classes">
+                        <p> {{ content }} </p>
+                        <button class="btn btn-primary" @click.prevent="onClick">OK</button>
+                    </div>
+                `,
+                props: {
+                    content: {type: String, required: true},
+                    color: {type: String, default: 'success'},
+                },
+                computed: {
+                    classes(){
+                        return 'alert-' + this.color;
+                    }
+                },
+                methods:{
+                    onClick(e){
+                        this.$emit('closedalert', this.content);
+                    }
+                },
+            };
+            let app = Vue.createApp({
+                components: {
+                    AppAlert
+                },
+                data(){
+                    return{
+                        alertMessages: []
+                    }
+                },
+                methods:{
+                    onCloseAlert(i, e){
+                        console.log(e);
+                        this.alertMessages.splice(i, 1);
+                    },
+                    showAlert(text, color='success'){
+                        alert = {
+                            message: text,
+                            color: color
+                        }
+                        this.alertMessages.push(alert);
+                    }
+                }
+            });
+            let root = app.mount('.sample');
+            console.log(root);
+        </script>
+    </body>
+</html>

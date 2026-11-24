@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>components</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/vue.global.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="sample">
+                <h1>Компоненты</h1>
+                <button :disabled="alert.show" class="btn btn-success m-3" @click="showAlert('Alert', 'success')">Show Alert</button>
+                <button :disabled="alert.show" class="btn btn-warning m-3" @click="showAlert('Warning', 'warning')">Show Warning</button>
+                <button :disabled="alert.show" class="btn btn-danger m-3" @click="showAlert('Danger', 'danger')">Show Danger</button>
+                <app-alert v-if="alert.show" :content="alert.message" :color="alert.color" @closedalert="onCloseAlert"></app-alert>
+            </div>
+        </div>
+        <script>
+            const AppAlert = {
+                template: `
+                    <div class="alert" :class="classes">
+                        <h2> {{ title }} </h2>
+                        <p> {{ content }} </p>
+                        <button class="btn btn-primary" @click.prevent="onClick">OK</button>
+                    </div>
+                `,
+                props: {
+                    title: {type: String, required: true},
+                    content: {type: String, required: true},
+                    color: {type: String, default: 'success'},
+                },
+                computed: {
+                    classes(){
+                        return 'alert-' + this.color;
+                    }
+                },
+                methods:{
+                    onClick(e){
+                        this.$emit('closedalert');
+                    }
+                },
+            };
+            let app = Vue.createApp({
+                components: {
+                    AppAlert
+                },
+                data(){
+                    return{
+                        alert: {
+                            message: '',
+                            color: 'success',
+                            show: false
+                        }
+                    }
+                },
+                methods:{
+                    onCloseAlert(){
+                        this.alert.show = false;
+                    },
+                    showAlert(text, color='success'){
+                        this.alert.message = text;
+                        this.alert.color = color;
+                        this.alert.show = true;
+                    }
+                }
+            });
+            let root = app.mount('.sample');
+            console.log(root);
+        </script>
+    </body>
+</html>
